@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Database Lookup</title>
+    <link rel="stylesheet" href="world.css">
+	<script src="world.js"></script>
+</head>
+<body>
+    <div>
+        <header class="heading">
+            <img src="img/earth.png" alt="Globe with markers">
+            <h1>World Database Lookup</h1>
+        </header>
+    </div>
+
+    <main role="main">
+        <div id="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search...">
+            </div>
+
+            <div class="search-controls">
+                <div class="check-slider">
+                    <img src="img/globe.png" class="select" alt="Globe icon">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <img src="img/architecture-and-city.png" class="select" alt="City icon">
+                </div>
+                <button id="lookup">Lookup</button>
+            </div>
+        </div>
+
+        <div id="result">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Continent</th>
+                        <th>Independence</th>
+                        <th>Head of State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table content will be dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
